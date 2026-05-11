@@ -8,7 +8,27 @@
 
 <body>
     
-    
+    <form id="weatherForm">
+        <label for="weatherInput">Please enter a city:</label>
+        <input type="text" id="weatherInput">
+        <button type="submit" id="getWeather">Get Weather</button>
+    </form>
+
+    <div id="tempConversion">
+        <h2>°C</h2>
+        <!-- REPLACE THIS BUTTON WITH A SLIDER TOGGLE FUNCTION -->
+        <button id="conversionBtn"></button>
+        <h2>°F</h2>
+    </div>
+
+    <div id="weatherCard">
+        <h1 id="currentTime">4:20</h1> <!-- Check if the API actually returns a time property -->
+        <h1 id="cityName">New York</h1>
+        <h3 id="humidity">Humidity: 75%</h3>
+        <h3 id="skyCondition">Sunny</h3> 
+        <i id="weatherIcon">☀️</i>
+        <h1 id="temperature">23°</h1>
+    </div>
 
 </body>
 </html>

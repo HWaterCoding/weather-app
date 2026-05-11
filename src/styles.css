@@ -1,0 +1,104 @@
+/* Presets:: */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg{
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select{
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    overflow-wrap: break-word;
+}
+
+p{
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-wrap: balance;
+}
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    margin: 20px;
+}
+
+/* Form Styling */
+
+#weatherForm{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#weatherForm label{
+    font-size: clamp(16px, 1.5rem, 24px);
+}
+
+#weatherInput{
+    border-radius: 15px;
+    font-size: clamp(16px, 1.5rem, 24px);
+}
+
+#getWeather{
+    border-radius: 15px;
+    border: none;
+    background-color: hsl(120, 50%, 55%);
+    font-size: clamp(16px, 1.5rem, 24px);
+    padding: 5px clamp(10px, 1rem, 20px);
+}
+
+#getWeather:hover{
+    cursor: pointer;
+    background-color: hsl(120, 56%, 44%);
+}
+
+
+/* Conversion styling */
+
+#tempConversion{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#conversionBtn{
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* Card Styling */
+
+#weatherCard{
+    background: linear-gradient(180deg, hsl(240, 100%, 71%), hsl(39, 100%, 63%));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px;
+}

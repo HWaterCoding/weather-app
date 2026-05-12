@@ -95,10 +95,13 @@ body{
 /* Card Styling */
 
 #weatherCard{
-    background: linear-gradient(180deg, hsl(240, 100%, 71%), hsl(39, 100%, 63%));
+    background: linear-gradient(180deg, hsl(202, 83%, 55%), hsl(39, 100%, 63%));
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
+    gap: clamp(16px, 1.5rem, 30px);
     padding: 40px;
+    width: clamp(30%, 600px, 80%);
+    height: 400px;
 }

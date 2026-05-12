@@ -1,5 +1,17 @@
 //IMPORTS
 import "./styles.css";
+import createCard from "./display-card.js";
+
+
+createCard();
+
+//modules needed:
+// index entry point
+//1) DOM-creation to load card based on default values but accept values as well
+//2) ui-controller to handle input value and temperature conversion
+//3) data-manager module to manage all weather data and store it properly?
+
+
 
 
 

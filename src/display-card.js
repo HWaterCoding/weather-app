@@ -1,6 +1,7 @@
 // module for creating the weather card dynamically
-export default function createCard(){
-    //create card via dom elements, return all elements on the card that need to be changed via weatherData
+export default function renderCard(weatherData){
+    //pass in weatherData object containing all relevant weather info you need.
+
     const weatherCard = document.getElementById("weatherCard");
 
     const currentTime = document.createElement("h1");
@@ -19,6 +20,7 @@ export default function createCard(){
     weatherIcon.id = "weatherIcon";
     temperature.id = "temperature";
 
+    //change these textContent's to the values of the weatherData object being passed in
     currentTime.textContent = "4:20";
     cityName.textContent = "Toronto";
     humidity.textContent = "200";
@@ -27,6 +29,4 @@ export default function createCard(){
     temperature.textContent = "99";
 
     weatherCard.append(currentTime, cityName, humidity, skyCondition, weatherIcon, temperature);
-
-    return { currentTime, cityName, humidity, skyCondition, weatherIcon, temperature }
 }

@@ -1,24 +1,20 @@
 //IMPORTS
 import "./styles.css";
 import createCard from "./display-card.js";
+import getWeatherData from "./fetch-data.js";
 
-
-createCard();
+getWeatherData();
+renderCard();
 
 //modules needed:
 // index entry point
 //1) DOM-creation to load card based on default values but accept values as well
 //2) ui-controller to handle input value and temperature conversion
 //3) data-manager module to manage all weather data and store it properly?
+//4) Module for fetch API function
 
 
 
-
-
-// We need the async function to fetch from the APIkey 
-// Need a DOM creation module to handle creating the content inside of the weather card
-// Need a ui-controller module to bind form submission event
-// 
 
 
 
@@ -34,3 +30,17 @@ createCard();
 
 //Update the icon dynamically to reflect the current weather status as well based on what the API returns. 
 
+
+
+
+
+
+//Logical chronological process:
+//1. On page load, fetch data from API (getWeatherData) with default value of New York 
+//2. Return the values retrieved from our weatherData object.
+//3. Call our renderCard() function with those values.
+
+//1. User fills in input field ---> fetch data from API (getWeatherData) with value of input field.
+//2. Extract that data from the object, and return it.
+//3. Pass that data into our form submission
+//4. Call renderCard() with that data.
